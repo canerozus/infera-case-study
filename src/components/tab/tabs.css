@@ -1,0 +1,30 @@
+.tabs-container {
+  width: 100%;
+  height: 100%;
+}
+.tab-titles {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  height: 60px;
+  padding: 0 24px;
+  box-shadow: 0px 1px 2px 0px rgba(56, 65, 74, 0.1);
+}
+.tab-button {
+  font-size: var(--m);
+  font-weight: var(--medium);
+  line-height: var(--ln-m);
+  color: var(--base-muted);
+  height: 20px;
+  width: 118px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.tab-button.active {
+  background-color: var(--purple-600);
+  color: var(--white);
+  height: 36px;
+  border-radius: 6px;
+}

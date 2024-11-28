@@ -1,0 +1,85 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  width: 204px;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 23px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  transition: height 0.2s ease;
+  transition: padding 0.2s ease;
+}
+.accordion-header.open {
+  height: 39px;
+  background-color: #ffffff33;
+  border-radius: 8px;
+  padding: 0 10px;
+  color: white;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.title-icon {
+  width: 14.29px;
+  height: 15.76px;
+}
+.title-icon.collapsed {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-title .title {
+  font-size: var(--l);
+  font-weight: var(--regular);
+  line-height: var(--ln-l);
+  margin: 0;
+}
+
+.accordion-arrow-icon {
+  width: 10px;
+  height: 10px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-arrow-icon.collapsed {
+  transform: rotate(90deg);
+  filter: brightness(0) invert(1);
+}
+
+.accordion-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  padding: 0 4px;
+  gap: 12px;
+}
+.accordion-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: var(--m);
+  font-weight: var(--regular);
+  line-height: var(--ln-m);
+  color: var(--purple-300);
+  gap: 16px;
+}
+.accordion-item p {
+  margin: 0px;
+}
+
+/* Note: Normally, the styling would be applied based on the 'active' class. 
+  Since we are working with dummy data and no routing system, it's applied this way. */
+
+.accordion-item p:first-of-type {
+  color: var(--white);
+}

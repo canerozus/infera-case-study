@@ -1,0 +1,98 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 74px;
+  padding-left: 24px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--base-light);
+}
+.navbar-left {
+  display: flex;
+  gap: 18px;
+}
+.navbar-right {
+  display: flex;
+  height: 58px;
+  gap: 20px;
+}
+
+.toggle-btn {
+  background: none;
+  width: 24px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+.toggle-btn img {
+  width: 20px;
+  height: 24px;
+}
+
+.icon-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+}
+.flag {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.rectangle {
+  width: 16.5px;
+  height: 16.5px;
+  cursor: pointer;
+}
+.theme-change {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.notifications {
+  width: 16.5px;
+  height: 18.33px;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+  padding: 0 20px;
+  border-left: 1px solid var(--base-light);
+  cursor: pointer;
+}
+.user-pic {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile-info {
+  display: flex;
+  width: 96px;
+  flex-direction: column;
+}
+.user-name {
+  color: var(--base-gray);
+  font-size: var(--m);
+  font-weight: var(--medium);
+  line-height: var(--ln-m);
+  margin: 0;
+}
+.user-role {
+  color: #9599ad;
+  font-size: 12px;
+  font-weight: var(--regular);
+}

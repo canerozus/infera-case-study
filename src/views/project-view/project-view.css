@@ -1,0 +1,120 @@
+.project-page {
+  width: 100%;
+  height: 100%;
+}
+.project-breadcrumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 39px;
+  border-bottom: 1px solid var(--base-light);
+  padding: 0 24px;
+}
+.project-breadcrumb .title {
+  font-size: var(--l);
+  font-weight: var(--bold);
+  line-height: var(--ln-l);
+  color: var(--base-gray);
+}
+.breadcrumb {
+  display: flex;
+  gap: 13px;
+}
+.first-text {
+  font-size: var(--m);
+  font-weight: var(--regular);
+  line-height: var(--ln-m);
+  color: var(--base-gray);
+}
+.breadcrumb-arrow-icon {
+  width: 15px;
+  height: 7.5px;
+  align-self: center;
+  filter: grayscale(60%) brightness(95%) contrast(90%) sepia(10%)
+    hue-rotate(10deg);
+}
+.sec-text {
+  font-size: var(--m);
+  font-weight: var(--regular);
+  line-height: var(--ln-m);
+  color: var(--base-muted);
+}
+.project-details {
+  display: flex;
+  gap: 20px;
+  height: 116px;
+  border-bottom: 1px solid var(--base-light);
+}
+.project-view {
+  width: 419px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 12px;
+  background-color: var(--purple-50);
+}
+.project-picture {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 3.17px;
+  margin-left: 24px;
+}
+.project-name {
+  font-size: 20px;
+  font-weight: var(--semibold);
+  line-height: 30px;
+  color: var(--purple-900);
+  margin: 0;
+}
+.project-situation {
+  font-size: var(--s);
+  font-weight: var(--medium);
+  line-height: var(--ln-xs);
+  color: var(--white);
+  background-color: #f1a218;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.project-more {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 10px;
+  top: 10px;
+  border-radius: 2.59px;
+  background-color: var(--white);
+  cursor: pointer;
+}
+.project-more .dots-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12.97px;
+  height: 12.97px;
+}
+.project-agreement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-contract {
+  display: flex;
+  flex-direction: column;
+}
+.project-contract span {
+  font-size: var(--m);
+  font-weight: var(--medium);
+  line-height: var(--ln-m);
+  color: var(--base-muted);
+}
+.project-contract p {
+  font-size: var(--m);
+  font-weight: var(--regular);
+  line-height: var(--ln-m);
+  color: var(--base-dark);
+  margin: 0;
+}

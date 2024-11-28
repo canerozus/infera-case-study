@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "./assets/styles/fonts.css";
+
+:root {
+  /* Font Sizes */
+  --l: 15px;
+  --m: 13px;
+  --s: 11px;
+
+  /* Font Weights */
+  --bold: 700;
+  --semibold: 600;
+  --medium: 500;
+  --regular: 400;
+
+  /* Line Heights */
+  --ln-l: 22.5px;
+  --ln-m: 19.5px;
+  --ln-s: 18px;
+  --ln-xs: 16.5px;
+
+  /*  base */
+  --white: #ffff;
+  --base-light: #efeff6;
+  --base-muted: #878a99;
+  --base-gray: #495057;
+  --base-dark: #212529;
+
+  /* purple */
+  --purple-25: #fafaff;
+  --purple-50: #f4f3ff;
+  --purple-100: #ebe9fe;
+  --purple-200: #d9d6fe;
+  --purple-300: #bdb4fe;
+  --purple-400: #9b8afb;
+  --purple-500: #7a5af8;
+  --purple-600: #6938ef;
+  --purple-700: #5925dc;
+  --purple-800: #5925dc;
+  --purple-900: #3e1c96;
+  --purple-950: #27115f;
+
+  /* green */
+  --green: #0ab39c;
+  --green-back: #0ab39c1a;
+
+  /* blue */
+  --blue: #007aff;
+  --blue-back: #007aff1a;
+
+  /* red */
+  --red: #e44835;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
 }

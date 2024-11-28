@@ -1,0 +1,48 @@
+.sidebar {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: var(--purple-900);
+  color: var(--purple-300);
+  transition: width 0.3s ease;
+  padding: 24px 0;
+}
+
+.sidebar.open {
+  width: 252px;
+}
+
+.sidebar.closed {
+  width: 0;
+}
+
+.sidebar.closed .logo,
+.sidebar.closed .sidebar-content {
+  display: none;
+  opacity: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  margin-bottom: 24px;
+  gap: 3px;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+  transition: opacity 0.3s ease;
+}
+.sidebar-item {
+  width: 204px;
+  font-size: var(--l);
+  line-height: var(--ln-l);
+  cursor: pointer;
+}
